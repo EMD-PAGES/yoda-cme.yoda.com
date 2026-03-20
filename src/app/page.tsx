@@ -665,7 +665,7 @@ export default function Home() {
         {/* Mobile banner */}
         <a href="#register" className="block md:hidden">
           <Image
-            src="/images/hero-section-mob.png"
+            src="/images/hero_section_mob.png"
             alt="Yoda Early Mind Summit – CME by Yoda Diagnostics"
             width={768}
             height={600}
@@ -825,7 +825,7 @@ export default function Home() {
               <h2 className="md:text-[72px] text-[48px] md:text-left text-center font-normal leading-[1.05] text-foreground md:mb-4! mb-2!">
                 Register Here
               </h2>
-              <p className="md:text-[24px] text-[18px] text-[#0D382BB2] mb-10">
+              <p className="md:text-[24px] text-[18px] md:text-left text-center text-[#0D382BB2] mb-10">
                 Earlier Autism Detection Starts Here.
               </p>
               <div className="w-full justify-center  md:flex hidden">
@@ -939,7 +939,7 @@ export default function Home() {
             {/* Text */}
             <div className="md:py-10! py-6! md:px-12! px-6!">
               <h2 className="md:text-[28px] text-[24px] font-semibold text-[#34B34A] mb-4!">
-                Venue &amp; Location
+                Venue 
               </h2>
               <p className="md:text-[20px] text-[16px] font-medium leading-[1.7] text-[#0D382BCC] mb-6!">
                 We look forward to welcoming you on{" "}
