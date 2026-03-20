@@ -994,7 +994,7 @@ export default function Home() {
         <a
           href="tel:+917207923173"
           aria-label="Call Khushbu Verma"
-          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-[#49C95B] transition-colors"
+          className="w-12 h-12 md:w-14 md:h-14 mb-2! flex items-center justify-center text-[#49C95B] transition-colors"
         >
           <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_176_21016)">
