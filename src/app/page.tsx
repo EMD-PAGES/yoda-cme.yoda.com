@@ -655,7 +655,7 @@ export default function Home() {
       <section id="overview" className="container-fluid pt-35! md:pt-25!">
         {/* Desktop banner */}
         <Image
-          src="/images/hero-section.png"
+          src="/images/hero_section.png"
           alt="Yoda Early Mind Summit – CME by Yoda Diagnostics"
           width={1440}
           height={423}
@@ -725,9 +725,9 @@ export default function Home() {
               Featured Speaker
             </h2>
           </div>
-          <div className="flex justify-center py-8!">
-            <div className="bg-white rounded-full border border-[#9ED8A8] py-4! px-4! flex items-center text-center md:gap-x-8 gap-x-4 shadow-sm max-w-150 w-full">
-              <div className="md:w-32 md:h-32 w-24 h-24 rounded-full  flex items-center justify-center text-white text-4xl font-bold mb-6 shrink-0">
+          <div className="flex lg:flex-row flex-col gap-4 justify-center items-center py-8!">
+            <div className="bg-white rounded-full border border-[#9ED8A8] py-4! px-4! xl:pr-20! md:pr-12! pr-4! flex items-center text-center md:gap-x-8 gap-x-4 shadow-sm max-w-fit w-full">
+              <div className="md:w-48 md:h-48 w-20 h-20 rounded-full  flex items-center justify-center text-white text-4xl font-bold mb-6 shrink-0">
                 <Image
                   src="/images/deppak_gupta.png"
                   alt="Dr. Deepak Gupta"
@@ -736,14 +736,42 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col items-left text-left">
-                <h4 className="md:text-3xl text-[20px] font-medium text-[#0D382B] mb-1.5!">
+                <p className="md:text-[12px] text-[8px] font-medium uppercase md:tracking-[0.24em] tracking-normal text-[#0D382B]">organising chairperson</p>
+                <h4 className="xl:text-3xl md:text-[24px] text-[16px] leading-tight font-medium text-[#49C95B] md:mb-1.5! mb:0.5!">
                   Dr. Deepak Gupta
                 </h4>
-                <p className="md:text-[20px] text-[12px] font-medium text-[#49C95B] mb-1!">
-                  MBBS, MD, DNB, DCAP
+                <p className="xl:text-[20px] md:text-[14px] text-[10px] font-medium text-[#0D382B] mb-1!">
+                  Child & Adolescent Psychiatrist
                 </p>
-                <p className="text-[#0D382BB2] italic md:text-[20px] text-[12px] mb-2!">
-                  (IOP, Kings College London)
+                <p className="text-[#0D382BB2] md:text-[12px] text-[8px] md:mb-2! md-1! overflow-hidden break-word">
+                  Founder/Director, Centre for Child and   <br/> Adolescent Well-being (CCAW)
+                  <br className="md:block hidden"/>
+                     <br/>
+                  Senior Consultant, Institute of Child Health,  <br className="md:block hidden" />
+                  Sir Ganga Ram Hospital, New Delhi
+                </p>
+              </div>
+            </div>
+               <div className="bg-white rounded-full border border-[#9ED8A8] py-4! px-4! xl:pr-20! md:pr-12! pr-4! flex items-center text-center md:gap-x-8 gap-x-4 shadow-sm max-w-fit w-full">
+              <div className="md:w-48 md:h-48 w-20 h-20 rounded-full  flex items-center justify-center text-white text-4xl font-bold mb-6 shrink-0">
+                <Image
+                  src="/images/nabanita_sengupta.png"
+                  alt="Dr. Nabanita Sengupta"
+                  width={210}
+                  height={210}
+                />
+              </div>
+              <div className="flex flex-col items-left text-left">
+                <p className="md:text-[12px] text-[8px] font-medium uppercase md:tracking-[0.24em] tracking-normal text-[#0D382B]">Organising Secretary</p>
+                <h4 className="xl:text-3xl md:text-[24px] text-[16px] leading-tight font-medium text-[#49C95B] md:mb-1.5! mb:0.5!">
+                  Dr. Nabanita Sengupta
+                </h4>
+                <p className="xl:text-[20px] md:text-[14px] text-[10px] font-medium text-[#0D382B] mb-1!">
+                  Child & Adolescent Psychiatrist 
+                </p>
+                <p className="text-[#0D382BB2] md:text-[12px] text-[8px] md:mb-2! mb-1! overflow-hidden break-word">
+                  Institute of Child Health, Sir Ganga Ram   <br className="md:block hidden" /> Hospital (SGRH) Centre for Child and  <br className="md:block hidden"/>
+                 Adolescent Well-being (CCAW) New Delhi
                 </p>
               </div>
             </div>
@@ -916,8 +944,8 @@ export default function Home() {
               <p className="md:text-[20px] text-[16px] font-medium leading-[1.7] text-[#0D382BCC] mb-6!">
                 We look forward to welcoming you on{" "}
                 <strong>29th March 2026</strong> at{" "}
-                <strong>The Oberoi, New Delhi</strong>, beginning at{" "}
-                <strong>9:30AM</strong>.
+                <strong>The Oberoi, New Delhi - 9:30AM Onwards.</strong>
+                
               </p>
               <a
                 href="https://maps.google.com/?q=The+Oberoi+New+Delhi"
@@ -962,6 +990,47 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="fixed right-3 md:right-6 top-1/2 -translate-y-1/2 z-50  rounded-[8px] overflow-hidden ">
+        <a
+          href="tel:+917207923173"
+          aria-label="Call Khushbu Verma"
+          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-[#49C95B] transition-colors"
+        >
+          <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_176_21016)">
+          <path d="M27.4938 54.0227C42.1456 54.0227 54.0232 42.1451 54.0232 27.4933C54.0232 12.8415 42.1456 0.963867 27.4938 0.963867C12.842 0.963867 0.964355 12.8415 0.964355 27.4933C0.964355 42.1451 12.842 54.0227 27.4938 54.0227Z" fill="#49C95B"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3471 11.6217L27.0115 17.1027C27.0115 17.1027 27.519 18.752 26.4279 19.5767C20.4013 24.1696 26.2375 36.1592 33.5709 34.2434C34.9031 33.9008 35.88 35.3091 35.88 35.3091L38.5443 40.7901C40.5109 44.2157 31.6678 46.3345 27.3794 42.4395C23.3702 38.7982 20.579 32.4672 20.2237 31.6678C19.805 30.9066 16.5443 24.8039 16.151 19.3991C15.7324 13.6263 22.85 7.95504 24.3344 11.6217H24.3471Z" fill="#FEFEFE"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_176_21016">
+          <rect width="55" height="55" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+
+        </a>
+        <a
+          href="https://wa.me/917207923173"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center text-[#49C95B]  transition-colors"
+        >
+        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_176_21019)">
+          <path d="M55 27.5C55 12.3122 42.6878 0 27.5 0C12.3122 0 0 12.3122 0 27.5C0 42.6878 12.3122 55 27.5 55C42.6878 55 55 42.6878 55 27.5Z" fill="#49C95B"/>
+          <path d="M39.8183 15.1385C36.8701 12.1035 32.7947 10.4561 28.6325 10.4561C19.7879 10.4561 12.6776 17.6531 12.7643 26.411C12.7643 29.1857 13.5447 31.8739 14.8454 34.3018L12.5908 42.5394L21.0019 40.3716C23.3431 41.6722 25.9445 42.2793 28.5457 42.2793C37.3037 42.2793 44.4141 35.0822 44.4141 26.3242C44.4141 22.0754 42.7666 18.0867 39.8183 15.1385ZM28.6325 39.5912C26.2913 39.5912 23.95 38.9842 21.9557 37.7702L21.4354 37.5101L16.4062 38.8107L17.7069 33.8682L17.36 33.348C13.5447 27.1914 15.3656 19.0405 21.6089 15.2252C27.8521 11.4099 35.9163 13.2308 39.7316 19.4741C43.5469 25.7173 41.726 33.7816 35.4827 37.5968C33.4884 38.8975 31.0604 39.5912 28.6325 39.5912ZM36.2632 29.9662L35.3094 29.5326C35.3094 29.5326 33.9219 28.9256 33.0548 28.492C32.9681 28.492 32.8814 28.4054 32.7947 28.4054C32.5345 28.4054 32.3611 28.492 32.1877 28.5788C32.1877 28.5788 32.101 28.6655 30.887 30.0529C30.8003 30.2264 30.6269 30.313 30.4534 30.313H30.3667C30.2801 30.313 30.1066 30.2264 30.0199 30.1396L29.5864 29.9662C28.6325 29.5326 27.7654 29.0124 27.0717 28.3187C26.8983 28.1452 26.6382 27.9718 26.4647 27.7984C25.8577 27.1914 25.2508 26.4977 24.8172 25.7173L24.7305 25.5439C24.6437 25.4572 24.6437 25.3705 24.5571 25.1971C24.5571 25.0236 24.5571 24.8502 24.6437 24.7635C24.6437 24.7635 24.9906 24.3299 25.2508 24.0698C25.4242 23.8963 25.5109 23.6362 25.6844 23.4629C25.8577 23.2026 25.9445 22.8558 25.8577 22.5957C25.771 22.1621 24.7305 19.821 24.4704 19.3006C24.2969 19.0405 24.1235 18.9538 23.8634 18.867H23.6032C23.4298 18.867 23.1697 18.867 22.9095 18.867C22.7361 18.867 22.5627 18.9538 22.3893 18.9538L22.3026 19.0405C22.1291 19.1273 21.9557 19.3006 21.7822 19.3874C21.6089 19.5607 21.5221 19.7342 21.3488 19.9076C20.7417 20.688 20.3949 21.6419 20.3949 22.5957C20.3949 23.2894 20.5683 23.9831 20.8284 24.59L20.9152 24.8502C21.6956 26.4977 22.7361 27.9718 24.1235 29.2725L24.4704 29.6193C24.7305 29.8795 24.9906 30.0529 25.1641 30.313C26.985 31.8739 29.0661 33.0011 31.4072 33.6081C31.6675 33.6948 32.0143 33.6948 32.2744 33.7816C32.5345 33.7816 32.8814 33.7816 33.1416 33.7816C33.575 33.7816 34.0954 33.6081 34.4422 33.4347C34.7023 33.2612 34.8758 33.2612 35.0492 33.0879L35.2226 32.9144C35.396 32.7409 35.5695 32.6543 35.7428 32.4808C35.9163 32.3074 36.0897 32.134 36.1764 31.9606C36.3499 31.6138 36.4365 31.1802 36.5233 30.7466C36.5233 30.5732 36.5233 30.313 36.5233 30.1396C36.5233 30.1396 36.4365 30.0529 36.2632 29.9662Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_176_21019">
+          <rect width="55" height="55" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+
+        </a>
+      </div>
+
       {/* ── FOOTER ── */}
       <footer className="bg-foreground py-16!">
         <div className="container-fluid flex flex-col items-center gap-8">
@@ -970,8 +1039,9 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://x.com/mryoda_official"
               aria-label="X"
+              target="_blank"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center"
             >
               <svg width="18" height="18" fill={DARK} viewBox="0 0 24 24">
@@ -979,8 +1049,9 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/MrYodaOfficial"
               aria-label="Facebook"
+              target="_blank"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center"
             >
               <svg width="18" height="18" fill={DARK} viewBox="0 0 24 24">
@@ -988,8 +1059,10 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/yodadiagnostics/"
               aria-label="LinkedIn"
+              target="_blank"
+
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center"
             >
               <svg width="18" height="18" fill={DARK} viewBox="0 0 24 24">
@@ -997,8 +1070,9 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCwLSo3ZDK_Vcti72VYHMXMw"
               aria-label="YouTube"
+              target="_blank"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center"
             >
               <svg width="18" height="18" fill={DARK} viewBox="0 0 24 24">
@@ -1006,8 +1080,9 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/mryodaofficial/"
               aria-label="Instagram"
+                target="_blank"
               className="w-10 h-10 rounded-full bg-white flex items-center justify-center"
             >
               <svg width="18" height="18" fill={DARK} viewBox="0 0 24 24">
