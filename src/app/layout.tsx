@@ -6,7 +6,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Yoda Early Mind Summit – CME by Yoda Diagnostics",
-  description: "Join the Yoda Early Mind Summit CME on 29th March 2026 at The Oberoi, New Delhi. Expert-led lectures on early autism detection.",
+  description:
+    "Join the Yoda Early Mind Summit CME on 29th March 2026 at The Oberoi, New Delhi. Expert-led lectures on early autism detection.",
+  icons: {
+    icon: "/images/yoda_favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -16,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
