@@ -22,10 +22,9 @@ export async function POST(req: NextRequest) {
       institution,
     });
 
-    // Append to Google Sheet (non-blocking)
+    // Append to Google Sheet (blocking)
     const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
-    appendToSheet({ timestamp, name, email, registrationNumber, specialization, institution })
-      .catch(err => console.error('Google Sheets write failed:', err));
+    await appendToSheet({ timestamp, name, email, registrationNumber, specialization, institution });
 
     return NextResponse.json({ success: true, id: registration._id }, { status: 201 });
   } catch (error) {
